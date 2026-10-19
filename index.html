@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vesto Atelier | Premium Suit Rental & Purchase in Ghana</title>
+  <meta name="description" content="Rent or buy premium suits in Ghana with doorstep delivery, installment options, and online checkout. Vesto Atelier serves Accra, Kumasi, Tamale, Takoradi, and more." />
+  <meta property="og:title" content="Vesto Atelier | Premium Suit Rental & Purchase in Ghana" />
+  <meta property="og:description" content="Rent or buy premium suits with online checkout, payment, and nationwide delivery scheduling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero-african.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-bar" id="scrollBar"></div>
+  <div class="bg-noise"></div>
+  <header class="topnav">
+    <div class="brand">Vesto Atelier</div>
+    <nav>
+      <a href="#store">Store</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#styled">Styled For You</a>
+      <a href="#policy">Policy</a>
+      <a href="#tryon">Virtual Try-On</a>
+      <a href="#admin">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <select id="palettePicker"><option value="umber-noir">Umber Noir</option><option value="cocoa-champagne">Cocoa Champagne</option><option value="obsidian-tan">Obsidian Tan</option></select>
+      <button id="closetBtn" class="closet-btn">My Wardrobe <span id="closetCount">0</span></button>
+      <button id="downloadLogsBtn" class="closet-btn">Export Logs</button>
+    </div>
+  </header>
+
+  <section class="hero page-enter"><img src="assets/images/hero-african.jpg" alt="Premium African suit hero" class="hero-image" /><div class="hero-overlay"></div><div class="hero-copy reveal"><p class="eyebrow">Nationwide In Ghana</p><h1>Elevate Your Look. Command Every Room.</h1><p>From Accra to Kumasi, Tamale, Takoradi and beyond, we rent and sell premium suits for graduations, executives, pastors, weddings, groomsmen, and studio photoshoots.</p><div class="hero-cta"><a class="btn gold" href="#store">Enter The Store</a><a class="btn clear" href="#tryon">Try It On Virtually</a></div><div class="trust-strip"><span>700+ Styled Clients</span><span>Nationwide Delivery</span><span>Secure Checkout</span></div></div></section>
+  <section class="spotlight reveal"><article class="feature-card"><h3>Dress Like Influence</h3><p>Luxury tailoring that speaks before you do.</p></article><article class="feature-card"><h3>Look Sharp, Stay Memorable</h3><p>Premium cuts for boardrooms and celebrations.</p></article><article class="feature-card"><h3>Rent Or Own</h3><p>From 250 GHS/day or flexible ownership plans.</p></article><article class="feature-card"><h3>Anywhere In Ghana</h3><p>Doorstep delivery and pickup concierge.</p></article></section>
+  <section id="store" class="store reveal"><div class="section-head"><div><p class="eyebrow">Store</p><h2>Premium Suit Runway</h2></div><div class="slider-controls"><button id="prevSlide" aria-label="Previous">&larr;</button><button id="nextSlide" aria-label="Next">&rarr;</button></div></div><div class="slider-wrap"><div class="products-track" id="products"></div></div></section>
+  <section id="bundles" class="ownership reveal"><p class="eyebrow">Packages</p><h2>High-Value Bundle Offers</h2><div class="ownership-grid" id="bundleGrid"></div></section>
+  <section id="tryon" class="tryon reveal"><p class="eyebrow">Virtual Try-On</p><h2>See Your Fit Before You Commit</h2><div class="tryon-grid"><div class="tryon-controls"><label>Upload Your Photo<input type="file" id="userPhoto" accept="image/*" /></label><label>Choose Suit<select id="suitPicker"></select></label><label>Preview Mode<select id="previewMode"><option value="split">Split View</option><option value="suit">Suit Only</option></select></label><p class="hint">Tip: use a full-body portrait facing forward for best matching.</p></div><div class="tryon-stage" id="tryonStage"><div class="tryon-pane"><p>Your Upload</p><img id="userPreview" class="layer user" alt="Your uploaded preview" /></div><div class="tryon-pane"><p>Selected Suit</p><img id="suitPreview" class="layer suit" alt="Selected suit preview" /></div></div></div></section>
+  <section class="testimonials reveal" id="testimonials"><p class="eyebrow">Client Proof</p><h2>What Clients Say</h2><div class="policy-grid"><article class="step-card"><h3>Kwame, Accra</h3><p>"Delivery was on time and the suit looked exactly like the photos."</p></article><article class="step-card"><h3>Kojo, Kumasi</h3><p>"The rental process was smooth and professional."</p></article><article class="step-card"><h3>Nana, Takoradi</h3><p>"I used the installment plan and picked my suit early."</p></article><article class="step-card"><h3>Yaw, Tamale</h3><p>"Clear policy, clean delivery, premium quality."</p></article></div></section>
+  <section id="styled" class="styled reveal"><p class="eyebrow">Styled For Your Moments</p><h2>Every Occasion, Perfectly Dressed</h2><div class="use-grid" id="useGrid"></div></section>
+  <section id="policy" class="policy reveal"><p class="eyebrow">Rental Rules</p><h2>Simple, Fair, Luxury Standard</h2><div class="policy-grid"><article class="step-card"><h3>Late Return</h3><p>50 GHS per day after agreed return date.</p></article><article class="step-card"><h3>Damage Fee</h3><p>Fee depends on repair level; severe damage may require replacement charge.</p></article><article class="step-card"><h3>No Home Washing</h3><p>Please do not wash suits at home.</p></article><article class="step-card"><h3>Delivery & Pickup</h3><p>Pickup and delivery available in Accra and nationwide.</p></article></div></section>
+  <section id="admin" class="policy reveal"><p class="eyebrow">Operations</p><h2>Order Dashboard</h2><div class="tryon-controls"><p class="hint">Track payments, invoices, and delivery progress.</p><div id="adminOrders" class="wardrobe-items"></div></div></section>
+
+  <aside class="wardrobe" id="closetPanel"><div class="wardrobe-head"><h3>My Wardrobe</h3><button id="closeCloset">x</button></div><div id="closetItems" class="wardrobe-items"></div><div class="wardrobe-footer"><p>Items <span id="totalItems">0</span></p><p>Subtotal <span id="estimatedValue">0 GHS</span></p><button class="btn gold full" id="checkoutBtn">Checkout Wardrobe</button></div></aside>
+
+  <dialog id="checkoutDialog" class="style-dialog checkout-dialog"><button id="closeCheckoutDialog" class="close-dialog">x</button><h2>Secure Checkout</h2><form id="checkoutForm" class="checkout-form"><label>Full Name<input id="customerName" required /></label><label>Phone Number<input id="customerPhone" value="+233" required /></label><label>Email<input id="customerEmail" type="email" required /></label><label>City<select id="deliveryCity" required><option value="Accra">Accra</option><option value="Kumasi">Kumasi</option><option value="Takoradi">Takoradi</option><option value="Tamale">Tamale</option><option value="Cape Coast">Cape Coast</option><option value="Other">Other (Ghana)</option></select></label><label>Delivery Address<textarea id="deliveryAddress" required></textarea></label><label>Delivery Date<input id="deliveryDate" type="date" required /></label><label>Order Type<select id="orderType" required><option value="rent">Rent</option><option value="buy">Buy</option><option value="mixed">Mixed</option></select></label><label>Payment Method<select id="paymentMethod" required><option value="card">Card (Paystack)</option><option value="momo">Mobile Money (Paystack)</option><option value="bank">Bank Transfer</option></select></label><div class="totals"><p>Subtotal <strong id="checkoutSubtotal">0 GHS</strong></p><p>Delivery <strong id="checkoutDelivery">0 GHS</strong></p><p>Total <strong id="checkoutTotal">0 GHS</strong></p></div><div class="checkout-actions"><button type="button" class="btn clear" id="payNowBtn">Pay Now</button><button type="button" class="btn clear" id="confirmOrderBtn">Confirm & Notify</button></div><p class="hint">Order confirmations are sent to WhatsApp and email for fast processing.</p></form></dialog>
+  <dialog id="styleDialog" class="style-dialog"><button id="closeStyleDialog" class="close-dialog">x</button><div id="styleContent"></div></dialog>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
